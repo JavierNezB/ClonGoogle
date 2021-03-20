@@ -1,59 +1,38 @@
 <!DOCTYPE html>
+<!--No es visible para la pagina, es como es descriptivo-->
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="Description" content="Motor de busqueda" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Google</title>
     <link rel="stylesheet" href="./style.css" />
 </head>
+<!--Cuerpo de todo el documento donde se agregara todo lo que el usuario vera-->
 
 <body>
+    <!--Etiqueta semantica, nos dice donde estamos, en que elemento-->
     <header>
+        <!--tiene dos elementos internos-->
+        <!--Una barra de navegación-->
         <nav>
-            <ul>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Imágenes</a></li>
+            <!--Un orden list-->
+            <ul class="nav-right-section">
+                <!--generamos los elementos list item-->
+                <!--puedes generar 4 de estas cosas poniendo li*4-->
+                <!--a es una etiqueta ancla-->
+                <li><a href="https://mail.google.com/mail/&ogbl">Gmail</a></li>
+                <li><a href="https://www.google.com.mx/imghp?hl=es-419&ogbl">Imágenes</a></li>
+                <li class="menu-icon"><a href="https://www.google.com.mx/intl/es-419/about/products"></a></li>
+                <li><a href="https://accounts.google.com/SignOutOptions?hl=es-419&continue=https://www.google.com.mx/%3Fhl%3Des-419">
+                    <!--src de donde viene la imagen, alt descripcion de la imagen-->
+                    <img src="https://lh3.googleusercontent.com/ogw/ADGmqu8FcAjLzfF1jF89EXDJoRs-Gqk5HrP48C1bmnon=s32-c-mo" alt=""></a>
+                </li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="divm">
-            <!--Imagen de google-->
-            <figure>
-                <img src="./ima/Google.jpg" alt="Google logo" />
-            </figure>
-            <!--Etiqueta para la bsuqueda-->
-            <label for="busqueda">
-                <input type="text" name="busqueda" autocomplete="email" />
-            </label>
-            <!--parte de los botones de buscar-->
-            <button type="submit">Buscar con Google</button>
-            <button type="submit">¿Tendre suerte?</button>
-        </div>
-    </main>
-    <footer>
-        <div id="div1">
-            <nav>
-                <ul>
-                    <li><a href="">Publicidad</a></li>
-                    <li><a href="">Negocios</a></li>
-                    <li><a href="">Acerca de</a></li>
-                    <li><a href="">Cómo funciona la Búsqueda</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="div2">
-            <nav>
-                <ul>
-                    <li><a href="">Privacidad</a></li>
-                    <li><a href="">Condiciones</a></li>
-                    <li><a href="">Preferencia</a></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
 </body>
 
 </html>

@@ -6,53 +6,61 @@
 html{
     font-size: 62.5%;
 }
-header{
-    background-color: white;
-    display: flex;
-    /*Alinea los elementos de forma vertical*/
-    align-items: center;
-    /*Esta alinea los elementos al final*/
-    justify-content: flex-end;
-    /*Borrar la siguiente*/
-    height: 6rem;
-}
-.divh{
-    display: flex;
-    align-items: center;
-}
-nav{
-    font-size: 1.6rem;
-}
-main{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-}
-.divm{
-    display: block;
-}
-img{
-    background-color: white;
-    width: 47rem;
-    height: 35rem;
-}
-button, label{
-    font-size: 1.6rem;
-}
-footer{
-    background-color: grey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-li{
-    /*Quitar los bulets*/
-    list-style-type: none;
-    display: inline-block;
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
-    /*Cambiar el color de los linkeos*/
-    color: black;
-    /*Quitar el subrayado de los linkeos*/
+    /*quitar lo subrrayado de abajo*/
     text-decoration: none;
+    /*Cambiar el tipo de cursos cuando se pase por arriba*/
+    cursor: pointer;
+}
+header{
+    margin-top: 1.5rem;
+    width: 100%;
+    height: 6rem;
+}
+/*BUscar una etiqueta nav dentro de header*/
+header nav{
+    display: flex;
+    /*mandar al lado derecho*/
+    justify-content: flex-end;
+}
+header nav .nav-right-section{
+    width: 25rem;
+    /*tomar la medida del padre, si crece crecera si no pues no xdd*/
+    height: auto;
+    display: flex;
+    /*quitar los bulets*/
+    list-style: none;
+    /*justificar el contenido para que no se quede todo a la derecha*/
+    /*o sea a la derecha pero centrado :v*/
+    justify-content: center;
+    /*alineas los elementos para que no se queden arriba*/
+    align-items: center;
+}
+nav .nav-right-section a{
+    /*separa los elementos*/
+    margin-right: 1rem;
+    color: #000000;
+}
+nav .nav-right-section .menu-icon{
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    /*evitar que se repita para rellenar el espacio*/
+    background-repeat: no-repeat;
+    /*el icono quedara al centro*/
+    background-position: center;
+    /*para que se aproxime del tamaño del contenedor*/
+    background-size: contain;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+nav .nav-right-section img{
+    /*darle un borde a la imagen formar un circulo*/
+    border-radius: 50%;
+    /*pornerle un espacio*/
+    margin-left: 1rem;
 }
