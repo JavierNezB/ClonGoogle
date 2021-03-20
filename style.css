@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+header{
+    background-color: white;
+    display: flex;
+    /*Alinea los elementos de forma vertical*/
+    align-items: center;
+    /*Esta alinea los elementos al final*/
+    justify-content: flex-end;
+    /*Borrar la siguiente*/
+    height: 6rem;
+}
+.divh{
+    display: flex;
+    align-items: center;
+}
+nav{
+    font-size: 1.6rem;
+}
+main{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+.divm{
+    display: block;
+}
+img{
+    background-color: white;
+    width: 47rem;
+    height: 35rem;
+}
+button, label{
+    font-size: 1.6rem;
+}
+footer{
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+li{
+    /*Quitar los bulets*/
+    list-style-type: none;
+    display: inline-block;
+}
+a{
+    /*Cambiar el color de los linkeos*/
+    color: black;
+    /*Quitar el subrayado de los linkeos*/
+    text-decoration: none;
+}
