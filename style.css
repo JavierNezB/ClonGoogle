@@ -38,13 +38,13 @@ header nav .nav-right-section{
     list-style: none;
     /*justificar el contenido para que no se quede todo a la derecha*/
     /*o sea a la derecha pero centrado :v*/
-    justify-content: center;
+    justify-content:flex-end;
     /*alineas los elementos para que no se queden arriba*/
     align-items: center;
 }
 nav .nav-right-section a{
     /*separa los elementos*/
-    margin-right: 1rem;
+    margin-right: 2rem;
     color: #000000;
 }
 nav .nav-right-section .menu-icon{
@@ -62,5 +62,94 @@ nav .nav-right-section img{
     /*darle un borde a la imagen formar un circulo*/
     border-radius: 50%;
     /*pornerle un espacio*/
-    margin-left: 1rem;
+    margin-left: 2rem;
+}
+
+/*Aqui comenzamos con la parte de main*/
+main{
+    /*se comento para que el proyecto no estuviera tan abajo*/
+    /*margin-top: 10rem;*/
+    text-align: center;
+}
+/*seccion logo*/
+main .main-logo{
+    width: 53rem;
+    /*divide lo que le sobra entre dos y lo coloca en el left y right "POR ESO AUTO"*/
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+main .main-logo img{
+    height: 20rem;
+    width: 50rem;
+}
+
+/*Comenzaremos con la barra de busqueda*/
+main .main-input{
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+main .main-input-container{
+    width: 52.5rem;
+    border-radius: 10rem;
+    border: .1rem solid #dfe1e5;
+    /*ayuda a posicionar el contenido en este caso de forma lineal por eso flex*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .main-input input{
+    width: 43.5rem;
+    height: 4rem;
+    /*Quitamos el autline y el borde azul*/
+    border: none;
+    outline: none;
+    margin-left: 1.5rem;
+}
+/*añadir zombra*/
+/*se añade un efecto, cuando pasa el cursos :hover*/
+main .main-input-container:hover{
+    box-shadow: 0 0.1rem .6rem 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .serch-icon{
+    background-image: url('https://www.sspa.juntadeandalucia.es/agenciadecalidadsanitaria/notificaciondeincidentes/images/es/nuevo2018/lupa.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+/*Estilo de los botones*/
+main .main-buttons{
+    width: 53rem;
+    margin: 0 auto;
+}
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button{
+    height: 3.6rem;
+    background-color: #f2f2f2f2;
+    border: 0;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+}
+main .main-buttons button:hover{
+    border: 0.1rem solid #c6c6c6;
+    box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+    color: #222;
 }
