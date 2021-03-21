@@ -153,3 +153,39 @@ main .main-buttons button:hover{
     box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
     color: #222;
 }
+
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 5rem;
+    background-color:#f2f2f2;
+    /*Asegurar que el footer siempre se ira abajo*/
+    position: absolute;
+    bottom: 0;
+    /*dividor en dos columnas o fracciones*/
+    /*Con Display Grid genera la cuadricula y podemos decidir la division de esta*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 1.3rem;
+    border-top: 0.1rem #e4e4e4e4;
+}
+footer ul{
+    margin: 2rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+/*Mover todo el elemento a la parte isquierda*/
+footer .footer-left{
+    justify-self: left;
+}
+/*Mover todo el elemento a la parte isquierda*/
+footer .footer-right{
+    justify-self: right;
+}
+footer ul li a{
+    margin: 1.5rem;
+    font-size: 1.4rem;
+    color: #5f6368;
+}
